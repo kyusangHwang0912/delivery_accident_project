@@ -1,18 +1,18 @@
 ---
-stitle:  "배달사고 단속구역 선정 프로젝트"
-
+layout: post
+title: "서울특별시 배달 단속지역 선정 프로젝트"
+subtitle: 데이터안심구역 경진대회
+description: >
+    데이터 분석을 통한 서울특별시 배달 단속지역 선정 프로젝트
+sitemap: false
 categories:
-  - Project
-
+  - project
 tags:
-  - [DataAnalytics, Project, Python]
-
-toc: true
-toc_sticky: true
- 
-date: 2022-02-05
-last_modified_at: 2022-02-05
+  - [Python, data_analytics]
 ---
+
+* toc
+{:toc .large-only}
 
 
 
@@ -26,7 +26,7 @@ last_modified_at: 2022-02-05
 
 
 
-**데이터안심구역의 dataset은 밖으로 유출이 금지되어 있기 때문에 분석과정과 관련 코드들만 공유됩니다.**
+**데이터안심구역의 dataset은 밖으로 유출이 금지되어 있기 때문에 분석과정만 공유됩니다.**
 
 
 
@@ -44,7 +44,7 @@ last_modified_at: 2022-02-05
 
 1. 코로나의 장기화로 배달량이 급증하였다.
 
-<img src="md-images/152631505-3f7229e4-9479-482b-98a0-8179382a5043.png" alt="image" style="width:50%"/>
+<img src="assets/md-images/152631505-3f7229e4-9479-482b-98a0-8179382a5043.png" alt="image" style="width:50%"/>
 
 
 
@@ -52,14 +52,14 @@ last_modified_at: 2022-02-05
 
 2. 배달량의 급증으로 오토바이의 교통량이 증가하였다.
 
-<img src="md-images/image-20220205153355232.png" alt="image-20220205153355232" style="width:50%;" />
+<img src="assets/md-images/image-20220205153355232.png" alt="image-20220205153355232" style="width:50%;" />
 
 
 
 3. 이륜차 사고의 심각성
    - 이륜차 사건 수와 사망자 수의 비율이 해마다 증가하고 있다.
 
-<img src="md-images/image-20220205154039755.png" alt="image-20220205154039755" style="width:50%;"/>
+<img src="assets/md-images/image-20220205154039755.png" alt="image-20220205154039755" style="width:50%;"/>
 
 
 
@@ -71,7 +71,7 @@ last_modified_at: 2022-02-05
 
 4. 경찰청의 특별 단속
 
-<img src="md-images/image-20220205180119180.png" alt="image-20220205180119180" style="width:80%;" />
+<img src="assets/md-images/image-20220205180119180.png" alt="image-20220205180119180" style="width:80%;" />
 
 
 
@@ -111,7 +111,7 @@ last_modified_at: 2022-02-05
 
 
 
-<img src="md-images/image-20220205162801338.png" alt="image-20220205162801338" style="width:70%;" />
+<img src="assets/md-images/image-20220205162801338.png" alt="image-20220205162801338" style="width:70%;" />
 
 
 
@@ -131,7 +131,7 @@ last_modified_at: 2022-02-05
 
 - 지역별 사고 수와 다른 변수들은 외식업개수(0.88) > 결제건수(0.78) > 월평균카드소비금액(0.75) > 월환산소비금액(0.74) > 보호구역 수(0.69) 등 양의 상관관계를 가지는 것을 확인하엿다.
 
-<img src="md-images/image-20220205163459571.png" alt="image-20220205163459571" style="width:70%;" />
+<img src="assets/md-images/image-20220205163459571.png" alt="image-20220205163459571" style="width:70%;" />
 
 
 
@@ -145,7 +145,7 @@ last_modified_at: 2022-02-05
   - p-value가 0.144인 '결제금액'변수는 유의하지 않을 가능성이 있다.
   - '월환산평균소득금액'과 '월환산평균소득금액' 변수는 다중공선성 수치가 10을 초과한다.
 
-<img src="md-images/image-20220205164754919.png" alt="image-20220205164754919" style="width:80%;" />
+<img src="assets/md-images/image-20220205164754919.png" alt="image-20220205164754919" style="width:80%;" />
 
 
 
@@ -163,7 +163,7 @@ last_modified_at: 2022-02-05
   - p-value가 0.05보다 큰 '결제금액'변수는 유의하지 않다고 판단된다.
   - 다중공선성 수치가 10을 초과하는 변수는 없다.
 
-<img src="md-images/image-20220205165317969.png" alt="image-20220205165317969" style="width:80%;" />
+<img src="assets/md-images/image-20220205165317969.png" alt="image-20220205165317969" style="width:80%;" />
 
 
 
@@ -182,7 +182,7 @@ last_modified_at: 2022-02-05
   - p-value가 0.05보다 큰 변수가 없다.
   - 다중공선성 수치가 10을 초과하는 변수는 없다.
 
-  <img src="md-images/image-20220205165826084.png" alt="image-20220205165826084" style="width:70%;" />
+  <img src="assets/md-images/image-20220205165826084.png" alt="image-20220205165826084" style="width:70%;" />
 
 
 
@@ -197,7 +197,7 @@ last_modified_at: 2022-02-05
 
 - 선정한 변수들을 통해 만든 모델을 통해 target 데이터를 예측하였을 때 RMSE의 값이 약 8.191로 모델이 유의하다고 판단하였다.
 
-<img src="md-images/image-20220205170005268.png" alt="image-20220205170005268" style="width:70%;" />
+<img src="assets/md-images/image-20220205170005268.png" alt="image-20220205170005268" style="width:70%;" />
 
 
 
@@ -214,7 +214,7 @@ last_modified_at: 2022-02-05
 - 회귀분석에서 도출한 회귀계수 + 랜덤포레스트 알고리즘을 활용하여 주요변수에 가중치를 부여하였다.
   - 외식업 : 0.5, 결제건수 0.3, 월평균카드소비금액 0.2, 보호구역 수 0.1, 숙박업 개수 0.05
 
-![image-20220205170357458](md-images/image-20220205170357458.png)
+![image-20220205170357458](assets/md-images/image-20220205170357458.png)
 
 
 
@@ -227,7 +227,7 @@ last_modified_at: 2022-02-05
 - 가중치를 통해 최종 점수를 도출하엿다.
   - 예) 관악구 신림동의 최종 점수 : 465\*0.005 + 465\*0.004 + 463\*0.003 + 463\*0.002 + 465\*0.001 = 6.965
 
-<img src="md-images/image-20220205175340983.png" alt="image-20220205175340983" style="width:80%;" />
+<img src="assets/md-images/image-20220205175340983.png" alt="image-20220205175340983" style="width:80%;" />
 
 
 
@@ -242,7 +242,7 @@ last_modified_at: 2022-02-05
 
 ⇒ 단속을 하기 위한 경찰청의 인력 및 비용을 줄이기 위함
 
-<img src="md-images/image-20220205175646879.png" alt="image-20220205175646879" style="zoom:70%;" />
+<img src="assets/md-images/image-20220205175646879.png" alt="image-20220205175646879" style="zoom:70%;" />
 
 
 
@@ -256,7 +256,7 @@ last_modified_at: 2022-02-05
 
 - 13시에 집중 단속 추천
 
-<img src="md-images/image-20220205175942121.png" alt="image-20220205175942121" style="width:70%;" />
+<img src="assets/md-images/image-20220205175942121.png" alt="image-20220205175942121" style="width:70%;" />
 
 
 
